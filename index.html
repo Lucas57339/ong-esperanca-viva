@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header>
+    <div class="container">
+      <div class="brand">
+        <strong>ONG Esperança Viva</strong>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="./cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+  <main id="conteudo-principal">
+    <section class="hero" aria-label="Apresentação da ONG">
+      <div class="container">
+        <h1>Transformando vidas com solidariedade</h1>
+        <p>
+          A <strong>ONG Esperança Viva</strong> atua há mais de 10 anos ajudando famílias em situação de
+          vulnerabilidade, promovendo educação, alimentação e oportunidades de um futuro melhor.
+        </p>
+        <div class="botoes-hero">
+          <a href="projetos.html" class="btn btn-verde">Conheça nossos projetos</a>
+          <a href="cadastro.html" class="btn btn-amarelo">Quero participar</a>
+        </div>
+      </div>
+    </section>
+  
+    <section class="destaques" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <h2 id="titulo-destaques">Nossos Projetos em Destaque</h2>
+        <p class="intro">
+          Conheça algumas das ações que transformam vidas e constroem um futuro mais justo e solidário.
+        </p>
+  
+        <div class="cards-projetos">
+          <article class="card">
+            <img src="./assets/img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula com voluntários">
+            <div class="card-conteudo">
+              <h3>Educação para o Futuro</h3>
+              <p>Oferece reforço escolar, oficinas gratuitas e acesso à tecnologia para crianças em comunidades carentes.</p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </article>
+  
+          <article class="card">
+            <img src="./assets/img/projeto-alimento.jpg" alt="Voluntário distribuindo alimentos a famílias carentes">
+            <div class="card-conteudo">
+              <h3>Alimento Solidário</h3>
+              <p>Arrecada e distribui alimentos para famílias em situação de vulnerabilidade social.</p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </article>
+  
+          <article class="card">
+            <img src="./assets/img/inclusao-cidadania.jpg" alt="Pessoa com deficiência participando de atividade esportiva">
+            <div class="card-conteudo">
+              <h3>Inclusão e Cidadania</h3>
+              <p>Promove capacitação profissional e inclusão social para pessoas com deficiência.</p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container rodape-grid">
+      <div class="rodape-sobre">
+        <h3>ONG Esperança Viva</h3>
+        <p>
+          Promovendo solidariedade, educação e inclusão social há mais de 10 anos.  
+          Cada ação é um passo rumo a um futuro mais justo.
+        </p>
+      </div>
+
+      <div class="rodape-links">
+        <h4>Links úteis</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-contato">
+        <h4>Contato</h4>
+        <ul>
+          <li><strong>Email:</strong> contato@ongesperancaviva.org</li>
+          <li><strong>Telefone:</strong> (11) 99999-9999</li>
+          <li><strong>Endereço:</strong> Rua da Solidariedade, 100 - São Paulo/SP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape-copy">
+      <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('ativo'));
+  </script>
+</body>
+</html>

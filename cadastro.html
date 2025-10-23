@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se | ONG Esperança Viva</title>
+
+ 
+  <meta name="description" content="Cadastre-se como voluntário ou doador e faça parte dos projetos da ONG Esperança Viva.">
+  <meta name="author" content="Lucas Ferreira Guimarães">
+
+
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+
+  <header>
+    <div class="container">
+      <div class="brand">
+        <strong>ONG Esperança Viva</strong>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./projetos.html">Projetos</a></li>
+          <li><a href="./cadastro.html" aria-current="page">Cadastre-se</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="cadastro" aria-labelledby="titulo-cadastro">
+      <div class="container">
+        <h1 id="titulo-cadastro">Cadastre-se como Voluntário ou Doador</h1>
+        <p class="intro">
+          Junte-se à <strong>ONG Esperança Viva</strong> e ajude a transformar vidas.
+          Preencha o formulário abaixo para se tornar parte dessa corrente do bem.
+        </p>
+
+        <form class="form-cadastro" action="#" method="post">
+          <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+            <label for="tipo">Como deseja participar?</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecione uma opção</option>
+              <option value="voluntario">Voluntário</option>
+              <option value="doador">Doador</option>
+            </select>
+
+            <label for="mensagem">Mensagem (opcional):</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre como deseja contribuir"></textarea>
+
+            <button type="submit" class="btn btn-primaria">Enviar cadastro</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container rodape-grid">
+      <div class="rodape-sobre">
+        <h3>ONG Esperança Viva</h3>
+        <p>
+          Promovendo solidariedade, educação e inclusão social há mais de 10 anos.  
+          Cada ação é um passo rumo a um futuro mais justo.
+        </p>
+      </div>
+
+      <div class="rodape-links">
+        <h4>Links úteis</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-contato">
+        <h4>Contato</h4>
+        <ul>
+          <li><strong>Email:</strong> contato@ongesperancaviva.org</li>
+          <li><strong>Telefone:</strong> (11) 99999-9999</li>
+          <li><strong>Endereço:</strong> Rua da Solidariedade, 100 - São Paulo/SP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape-copy">
+      <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('ativo'));
+  </script>
+</body>
+</html>
+
