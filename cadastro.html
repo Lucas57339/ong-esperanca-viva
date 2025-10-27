@@ -49,7 +49,7 @@
           Preencha o formulário abaixo para se tornar parte dessa corrente do bem.
         </p>
 
-        <form class="form-cadastro" action="#" method="post">
+        <form id="cadastro-form">
           <fieldset>
             <legend>Informações pessoais</legend>
 
@@ -68,6 +68,8 @@
 
             <label for="mensagem">Mensagem (opcional):</label>
             <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre como deseja contribuir"></textarea>
+            <div id="mensagem-erro" style="color: red; display: none; margin-bottom: 10px;"></div>
+            <div id="mensagem-sucesso" style="color: green; display: none; margin-bottom: 10px;"></div>
 
             <button type="submit" class="btn btn-primaria">Enviar cadastro</button>
           </fieldset>
@@ -116,6 +118,9 @@
     const menu = document.querySelector('.menu');
     toggle.addEventListener('click', () => menu.classList.toggle('ativo'));
   </script>
+  <script src="./js/main.js"></script>
+  <script src="./js/mask.js"></script>
+
 </body>
 </html>
 
