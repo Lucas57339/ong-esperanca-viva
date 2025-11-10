@@ -1,0 +1,159 @@
+
+
+body.modo-escuro {
+  background-color: #0f172a;
+  color: #f9fafb;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+
+body.modo-escuro header {
+  background-color: #1e293b;
+  color: #f9fafb;
+}
+
+body.modo-escuro .menu a {
+  color: #f9fafb;
+}
+
+body.modo-escuro .menu a:hover,
+body.modo-escuro .menu a[aria-current="page"] {
+  color: #22c55e;
+}
+
+
+body.modo-escuro .hero {
+  background:
+    linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)),
+    url("../assets/img/hero-bg.jpg") center/cover no-repeat;
+  color: #f9fafb;
+}
+
+body.modo-escuro .hero h1 {
+  color: #f9fafb;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+body.modo-escuro .hero p {
+  color: #d1d5db;
+}
+
+
+body.modo-escuro .btn,
+body.modo-escuro .btn-verde,
+body.modo-escuro .btn-amarelo {
+  background-color: #22c55e;
+  color: #111827;
+}
+
+body.modo-escuro .btn:hover,
+body.modo-escuro .btn-verde:hover,
+body.modo-escuro .btn-amarelo:hover {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+
+body.modo-escuro .sobre-valores {
+  background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
+}
+
+body.modo-escuro .sobre-conteudo .texto h2,
+body.modo-escuro .valores h2 {
+  color: #22c55e;
+}
+
+body.modo-escuro .sobre-conteudo .texto p {
+  color: #e2e8f0;
+}
+
+
+body.modo-escuro .valor,
+body.modo-escuro .card {
+  background-color: #1f2937;
+  color: #f9fafb;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.modo-escuro .valor-texto h3,
+body.modo-escuro .card h3 {
+  color: #22c55e;
+}
+
+body.modo-escuro .valor-texto p,
+body.modo-escuro .card p {
+  color: #e2e8f0;
+}
+
+
+body.modo-escuro .form-section,
+body.modo-escuro .form-cadastro {
+  background-color: #1e293b;
+  color: #f9fafb;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.modo-escuro form input,
+body.modo-escuro form select,
+body.modo-escuro form textarea {
+  background-color: #334155;
+  border-color: #475569;
+  color: #f9fafb;
+}
+
+body.modo-escuro form input:focus,
+body.modo-escuro form select:focus,
+body.modo-escuro form textarea:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+}
+
+body.modo-escuro form button {
+  background-color: #22c55e;
+  color: #111827;
+}
+
+body.modo-escuro form button:hover {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+
+body.modo-escuro footer {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.modo-escuro .rodape-links a {
+  color: #22c55e;
+}
+
+body.modo-escuro .rodape-links a:hover {
+  color: #fff;
+}
+
+body.modo-escuro .rodape-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #d1d5db;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header .brand strong,
+body.modo-escuro header .brand strong,
+body.dark-mode header .container .brand strong,
+body.modo-escuro header .container .brand strong,
+body.dark-mode header div.brand strong,
+body.modo-escuro header div.brand strong,
+body.dark-mode .brand strong,
+body.modo-escuro .brand strong {
+  color:#ffffff!important;
+  text-shadow:0 0 6px rgba(0,0,0,.7)!important;
+  filter:brightness(1.2)!important;
+}
+
+  
+  
+  

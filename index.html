@@ -3,94 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos | ONG Esperança Viva</title>
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/layout.css">
+  <meta name="description" content="ONG Esperança Viva — Promovendo solidariedade, educação e inclusão social.">
+  <meta name="author" content="Lucas Ferreira Guimarães">
+  <title>Início | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="./css/base.min.css">
+  <link rel="stylesheet" href="./css/layout.min.css">
+  <link rel="stylesheet" href="./css/darkmode.min.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
-
   <header>
+    <button id="toggleDark" class="btn-darkmode" aria-label="Ativar ou desativar modo escuro">🌓</button>
     <div class="container">
-      <div class="brand">
-        <strong>ONG Esperança Viva</strong>
-      </div>
-
-      <nav aria-label="Navegação principal">
+      <div class="brand"><strong>ONG Esperança Viva</strong></div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+      <nav id="menu-principal" aria-label="Navegação principal">
         <ul class="menu">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="./index.html" aria-current="page">Início</a></li>
+          <li><a href="./projetos.html">Projetos</a></li>
           <li><a href="./cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
-
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
   <main id="conteudo-principal">
-    <section class="hero" aria-label="Apresentação da ONG">
+    <section class="hero">
       <div class="container">
-        <h1>Transformando vidas com solidariedade</h1>
-        <p>
-          A <strong>ONG Esperança Viva</strong> atua há mais de 10 anos ajudando famílias em situação de
-          vulnerabilidade, promovendo educação, alimentação e oportunidades de um futuro melhor.
-        </p>
+        <h1>Bem-vindo à ONG Esperança Viva</h1>
+        <p>Promovendo solidariedade, educação e inclusão social para transformar vidas e construir um futuro melhor.</p>
         <div class="botoes-hero">
-          <a href="projetos.html" class="btn btn-verde">Conheça nossos projetos</a>
-          <a href="cadastro.html" class="btn btn-amarelo">Quero participar</a>
+          <a href="./projetos.html" class="btn btn-verde">Conheça nossos projetos</a>
+          <a href="./cadastro.html" class="btn btn-amarelo">Participe agora</a>
         </div>
       </div>
     </section>
-  
-    <section class="destaques" aria-labelledby="titulo-destaques">
+    <section class="sobre-valores">
       <div class="container">
-        <h2 id="titulo-destaques">Nossos Projetos em Destaque</h2>
-        <p class="intro">
-          Conheça algumas das ações que transformam vidas e constroem um futuro mais justo e solidário.
-        </p>
-  
-        <div class="cards-projetos">
-          <article class="card">
-            <img src="./assets/img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula com voluntários">
-            <div class="card-conteudo">
-              <h3>Educação para o Futuro</h3>
-              <p>Oferece reforço escolar, oficinas gratuitas e acesso à tecnologia para crianças em comunidades carentes.</p>
-              <a href="#" class="btn">Saiba mais</a>
+        <div class="sobre-conteudo">
+          <div class="texto">
+            <h2>Quem Somos</h2>
+            <p>A <strong>ONG Esperança Viva</strong> é uma organização sem fins lucrativos que há mais de 10 anos apoia famílias em vulnerabilidade, oferecendo educação, alimentação e oportunidades de desenvolvimento. Nosso objetivo é transformar vidas por meio da solidariedade e inclusão social.</p>
+          </div>
+        </div>
+        <div class="mensagem-inspiradora">
+          <p>“Transformando vidas por meio da solidariedade, educação e inclusão social.”</p>
+        </div>
+        <div class="valores">
+          <h2>Nossos Valores</h2>
+          <div class="valores-grid">
+            <div class="valor">
+              <img src="./assets/img/projeto-alimento.jpg" alt="Distribuição de alimentos">
+              <div class="valor-texto">
+                <h3>🤝 Solidariedade</h3>
+                <p>Ajudamos quem mais precisa, com empatia e dedicação.</p>
+              </div>
             </div>
-          </article>
-  
-          <article class="card">
-            <img src="./assets/img/projeto-alimento.jpg" alt="Voluntário distribuindo alimentos a famílias carentes">
-            <div class="card-conteudo">
-              <h3>Alimento Solidário</h3>
-              <p>Arrecada e distribui alimentos para famílias em situação de vulnerabilidade social.</p>
-              <a href="#" class="btn">Saiba mais</a>
+            <div class="valor">
+              <img src="./assets/img/inclusao-cidadania.jpg" alt="Inclusão social e cidadania">
+              <div class="valor-texto">
+                <h3>🔍 Transparência</h3>
+                <p>Atuamos com ética e clareza em todas as ações realizadas.</p>
+              </div>
             </div>
-          </article>
-  
-          <article class="card">
-            <img src="./assets/img/inclusao-cidadania.jpg" alt="Pessoa com deficiência participando de atividade esportiva">
-            <div class="card-conteudo">
-              <h3>Inclusão e Cidadania</h3>
-              <p>Promove capacitação profissional e inclusão social para pessoas com deficiência.</p>
-              <a href="#" class="btn">Saiba mais</a>
+            <div class="valor">
+              <img src="./assets/img/projeto-educacao.jpg" alt="Educação e aprendizado">
+              <div class="valor-texto">
+                <h3>💪 Comprometimento</h3>
+                <p>Buscamos resultados reais para fortalecer a comunidade.</p>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  
   <footer>
     <div class="container rodape-grid">
       <div class="rodape-sobre">
         <h3>ONG Esperança Viva</h3>
-        <p>
-          Promovendo solidariedade, educação e inclusão social há mais de 10 anos.  
-          Cada ação é um passo rumo a um futuro mais justo.
-        </p>
+        <p>Promovendo solidariedade, educação e inclusão social há mais de 10 anos. Cada ação é um passo rumo a um futuro mais justo.</p>
       </div>
-
       <div class="rodape-links">
         <h4>Links úteis</h4>
         <ul>
@@ -99,7 +91,6 @@
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </div>
-
       <div class="rodape-contato">
         <h4>Contato</h4>
         <ul>
@@ -109,16 +100,28 @@
         </ul>
       </div>
     </div>
-
     <div class="rodape-copy">
       <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
     </div>
   </footer>
-
+  <script src="./js/main.min.js" defer></script>
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggle.addEventListener('click', () => menu.classList.toggle('ativo'));
-  </script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const titulo=document.querySelector('header .brand strong');
+      const body=document.body;
+      const atualizarCor=()=>{
+        if(body.classList.contains('dark-mode')||body.classList.contains('modo-escuro')){
+          titulo.style.color='#22ff88';
+          titulo.style.textShadow='0 0 12px rgba(0,0,0,0.9)';
+        }else{
+          titulo.style.color='';
+          titulo.style.textShadow='';
+        }
+      };
+      atualizarCor();
+      document.getElementById('toggleDark').addEventListener('click',()=>setTimeout(atualizarCor,300));
+    });
+    </script>
+    
 </body>
 </html>

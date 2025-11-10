@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastre-se | ONG Esperança Viva</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cadastre-se na ONG Esperança Viva — Junte-se à solidariedade.">
+<meta name="author" content="Lucas Ferreira Guimarães">
+<title>Cadastro | ONG Esperança Viva</title>
+<link rel="stylesheet" href="./css/base.min.css">
+<link rel="stylesheet" href="./css/layout.min.css">
+<link rel="stylesheet" href="./css/darkmode.min.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+<header>
+<button id="toggleDark" class="btn-darkmode" aria-label="Ativar ou desativar modo escuro">🌓</button>
+<div class="container">
+<div class="brand"><strong>ONG Esperança Viva</strong></div>
+<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+<nav id="menu-principal" aria-label="Navegação principal">
+<ul class="menu">
+<li><a href="./index.html">Início</a></li>
+<li><a href="./projetos.html">Projetos</a></li>
+<li><a href="./cadastro.html" aria-current="page">Cadastre-se</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <header>
-    <div class="container">
-      <div class="brand">
-        <strong>ONG Esperança Viva</strong>
-      </div>
-      <nav aria-label="Navegação principal">
-        <ul class="menu">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./projetos.html">Projetos</a></li>
-          <li><a href="./cadastro.html" aria-current="page">Cadastre-se</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<main id="conteudo-principal">
+<section class="form-section">
+<div class="container">
+<h1>Cadastre-se como Voluntário ou Doador</h1>
+<p>Junte-se à <strong>ONG Esperança Viva</strong> e ajude a transformar vidas. Preencha o formulário abaixo e faça parte dessa corrente do bem.</p>
+<h2>Formulário de Cadastro</h2>
+<form id="cadastro-form">
+<label for="nome">Nome completo:</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+<label for="participacao">Como deseja participar?</label>
+<select id="participacao" name="participacao" required>
+<option value="">Selecione uma opção</option>
+<option value="voluntario">Voluntário</option>
+<option value="doador">Doador</option>
+</select>
+<label for="mensagem">Mensagem (opcional):</label>
+<textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre como deseja contribuir"></textarea>
+<button type="submit">Enviar cadastro</button>
+<p id="mensagem-erro" style="display:none;color:#b91c1c;margin-top:8px;font-weight:600"></p>
+<p id="mensagem-sucesso" style="display:none;color:#16a34a;margin-top:8px;font-weight:600"></p>
+</form>
+</div>
+</section>
+</main>
 
-  <main id="main">
-    <section class="texto-centralizado">
-      <h1>Cadastre-se como Voluntário ou Doador</h1>
-      <p>Junte-se à <strong>ONG Esperança Viva</strong> e ajude a transformar vidas. Preencha o formulário abaixo para se tornar parte dessa corrente do bem.</p>
-    </section>
+<footer>
+<div class="footer-content">
+<div class="footer-col">
+<strong>ONG Esperança Viva</strong>
+<p>Promovendo solidariedade, educação e inclusão social há mais de 10 anos. Cada ação é um passo rumo a um futuro mais justo.</p>
+</div>
+<div class="footer-col">
+<h4>Links úteis</h4>
+<ul>
+<li><a href="./index.html">Início</a></li>
+<li><a href="./projetos.html">Projetos</a></li>
+<li><a href="./cadastro.html">Cadastre-se</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contato</h4>
+<ul>
+<li><strong>Email:</strong> contato@ongesperancaviva.org</li>
+<li><strong>Telefone:</strong> (11) 99999-9999</li>
+<li><strong>Endereço:</strong> Rua da Solidariedade, 100 - São Paulo/SP</li>
+</ul>
+</div>
+</div>
+<div class="footer-base">
+<p>© 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+</div>
+</footer>
 
-    <section class="form-section" aria-labelledby="titulo-cadastro">
-      <h2>Informações pessoais</h2>
-      <form>
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-
-        <label for="participacao">Como deseja participar?</label>
-        <select id="participacao" name="participacao" required>
-          <option value="">Selecione uma opção</option>
-          <option value="voluntario">Voluntário</option>
-          <option value="doador">Doador</option>
-        </select>
-
-        <label for="mensagem">Mensagem (opcional):</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre como deseja contribuir"></textarea>
-
-        <button type="submit">Enviar cadastro</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer-base">
-    <div class="container">
-      <div>
-        <strong>ONG Esperança Viva</strong>
-        <p>Promovendo solidariedade, educação e inclusão social há mais de 10 anos.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Links úteis</h4>
-        <ul>
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./projetos.html">Projetos</a></li>
-          <li><a href="./cadastro.html">Cadastre-se</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <p>Email: contato@ongesperancaviva.org</p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>Endereço: Rua da Solidariedade, 100 - São Paulo/SP</p>
-      </div>
-    </div>
-    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
-  </footer>
+<script src="./js/main.min.js"></script>
 </body>
 </html>
-

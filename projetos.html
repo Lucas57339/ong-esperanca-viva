@@ -3,60 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos sociais da ONG Esperança Viva e descubra como fazemos a diferença na vida de centenas de famílias.">
+  <meta name="author" content="Lucas Ferreira Guimarães">
   <title>Projetos | ONG Esperança Viva</title>
 
-
-  <meta name="description" content="Conheça os projetos sociais da ONG Esperança Viva e descubra como fazemos a diferença na vida de centenas de famílias.">
-  <meta name="author" content="Luciano Rodrigues">
-
-
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/layout.css">
-
- 
+  <link rel="stylesheet" href="./css/base.min.css">
+  <link rel="stylesheet" href="./css/layout.min.css">
+  <link rel="stylesheet" href="./css/darkmode.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="./js/main.min.js" defer></script>
 </head>
 
 <body>
- 
   <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
-  
   <header>
+    <button id="toggleDark" class="btn-darkmode" aria-label="Ativar ou desativar modo escuro">🌓</button>
     <div class="container">
       <div class="brand">
         <strong>ONG Esperança Viva</strong>
       </div>
-
-      <nav aria-label="Navegação principal">
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+      <nav id="menu-principal" aria-label="Navegação principal">
         <ul class="menu">
           <li><a href="./index.html">Início</a></li>
           <li><a href="./projetos.html" aria-current="page">Projetos</a></li>
           <li><a href="./cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
-
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
-  <!-- Conteúdo principal -->
   <main id="conteudo-principal">
     <section class="projetos" aria-labelledby="titulo-projetos">
       <div class="container">
-        <h1 id="titulo-projetos">Nossos Projetos</h1>
-        <p class="intro">
-          Conheça com mais detalhes as iniciativas que fazem parte do trabalho da 
-          <strong>ONG Esperança Viva</strong>. 
-          Cada projeto representa um passo importante na construção de um futuro melhor para nossas comunidades.
+
+        <!-- Novo título principal e espaçamento -->
+        <h1 style="font-size: 2.4rem; text-align:center; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--texto-principal);">
+          ONG Esperança Viva
+        </h1>
+
+        <h2 id="titulo-projetos" style="font-size: 1.8rem; text-align:center; margin-bottom: 0.5rem;">
+          Nossos Projetos
+        </h2>
+
+        <p class="intro" style="text-align:center; max-width: 800px; margin: 0 auto 2rem;">
+          Conheça as iniciativas da <strong>ONG Esperança Viva</strong> que impactam diretamente comunidades, promovendo inclusão, educação e solidariedade.
         </p>
 
         <div class="cards-projetos">
           <article class="card">
-            <img src="./assets/img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula com apoio de voluntários">
+            <img src="assets/img/projeto-educacao.jpg" alt="Crianças estudando em sala de aula com apoio de voluntários">
             <div class="card-conteudo">
               <h3>Educação para o Futuro</h3>
-              <p>Oferece reforço escolar, oficinas de leitura e acesso à tecnologia para crianças e adolescentes de comunidades em vulnerabilidade.</p>
+              <p>Reforço escolar, oficinas de leitura e acesso à tecnologia para crianças e adolescentes de comunidades carentes.</p>
               <a href="#" class="btn">Saiba mais</a>
             </div>
           </article>
@@ -65,16 +66,16 @@
             <img src="./assets/img/projeto-alimento.jpg" alt="Voluntário organizando e distribuindo alimentos a famílias carentes">
             <div class="card-conteudo">
               <h3>Alimento Solidário</h3>
-              <p>Arrecada e distribui alimentos e cestas básicas para famílias em situação de vulnerabilidade social.</p>
+              <p>Distribui alimentos e cestas básicas para famílias em situação de vulnerabilidade social em toda a cidade.</p>
               <a href="#" class="btn">Saiba mais</a>
             </div>
           </article>
 
           <article class="card">
-            <img src="./assets/img/inclusao-cidadania.jpg" alt="Pessoa com deficiência participando de atividade esportiva de inclusão social">
+            <img src="./assets/img/inclusao-cidadania.jpg" alt="Pessoa com deficiência participando de atividade esportiva inclusiva">
             <div class="card-conteudo">
               <h3>Inclusão e Cidadania</h3>
-              <p>Promove capacitação profissional e inclusão social para pessoas com deficiência, fortalecendo a autonomia e a igualdade de oportunidades.</p>
+              <p>Capacitação profissional e inclusão social para pessoas com deficiência, fortalecendo autonomia e igualdade.</p>
               <a href="#" class="btn">Saiba mais</a>
             </div>
           </article>
@@ -83,15 +84,11 @@
     </section>
   </main>
 
-  <!-- Rodapé -->
   <footer>
     <div class="container rodape-grid">
       <div class="rodape-sobre">
         <h3>ONG Esperança Viva</h3>
-        <p>
-          Promovendo solidariedade, educação e inclusão social há mais de 10 anos.  
-          Cada ação é um passo rumo a um futuro mais justo.
-        </p>
+        <p>Promovendo solidariedade, educação e inclusão social há mais de 10 anos. Cada ação é um passo rumo a um futuro mais justo.</p>
       </div>
 
       <div class="rodape-links">
@@ -117,12 +114,6 @@
       <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
     </div>
   </footer>
-
-  <!-- Script do menu responsivo -->
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggle.addEventListener('click', () => menu.classList.toggle('ativo'));
-  </script>
 </body>
 </html>
+
